@@ -1,0 +1,20 @@
+# Basic usage
+python find_duplicates.py /path/to/directory
+
+# Specify output file
+python find_duplicates.py /path/to/directory -o my_report.txt
+
+# Only check files larger than 1MB
+python find_duplicates.py /path/to/directory -m 1048576
+```
+
+**Example output in the report file:**
+```
+Group 1 (Hash: a3f2b8c91d42..., Size: 15.23 MB)
+--------------------------------------------------
+  [ORIGINAL] /photos/2020/vacation/IMG_001.jpg
+             Modified: 2020-07-15 14:23:45
+  [DUPLICATE] /photos/backup/IMG_001.jpg
+              Modified: 2021-01-10 09:12:33
+  [DUPLICATE] /downloads/IMG_001.jpg
+              Modified: 2022-03-05 16:45:12
